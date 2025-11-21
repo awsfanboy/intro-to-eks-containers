@@ -58,7 +58,7 @@ aws configure
 You'll need to provide:
 - AWS Access Key ID
 - AWS Secret Access Key
-- Default region: `ap-southeast-6` (Auckland)
+- Default region: `ap-southeast-6` Asia Pacific (New Zealand)
 - Default output format: `json`
 
 Verify your configuration:
@@ -699,7 +699,7 @@ kubectl describe ingress feijoa-app-ingress
 
 This project was created for AWS Student Community Day in Auckland to teach university students about container orchestration and cloud deployment. The application is named after the feijoa, a delicious fruit widely grown in New Zealand!
 
-**Region**: This demo uses the ap-southeast-6 (Auckland) region, AWS's newest region located in New Zealand.
+**Region**: This demo uses the Asia Pacific (New Zealand) region, AWS's newest region located in New Zealand.
 
 ---
 

@@ -15,7 +15,7 @@ app.get('/api/info', (req, res) => {
   res.json({
     app: 'feijoa-app',
     message: 'Welcome to the Feijoa App - AWS EKS Demo',
-    region: 'ap-southeast-6 (Auckland)',
+    region: 'Asia Pacific (New Zealand)',
     description: 'A simple containerized application running on Amazon EKS',
     funFact: 'Feijoas are a delicious fruit native to South America but widely grown in New Zealand!'
   });
