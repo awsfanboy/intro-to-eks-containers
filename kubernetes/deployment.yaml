@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: feijoa-app
+  labels:
+    app: feijoa-app
+    environment: demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: feijoa-app
+  template:
+    metadata:
+      labels:
+        app: feijoa-app
+        environment: demo
+    spec:
+      containers:
+      - name: feijoa-app
+        # Replace <account-id> with your AWS account ID
+        image: <account-id>.dkr.ecr.ap-southeast-6.amazonaws.com/feijoa-app:latest
+        ports:
+        - containerPort: 3000
+          protocol: TCP
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"

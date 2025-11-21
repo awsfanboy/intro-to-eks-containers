@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feijoa App - Amazon EKS Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        .emoji {
+            margin: 20px 0;
+        }
+        
+        .emoji img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .info {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .info h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .info p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .status {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #28a745;
+            border-radius: 50%;
+            margin-right: 5px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji"><img src="/feijoa.png" alt="Feijoa fruit"></div>
+        <h1>Feijoa App</h1>
+        <p style="color: #666; margin-bottom: 20px;">
+            <span class="status"></span>
+            Running on Amazon EKS
+        </p>
+        
+        <div class="info">
+            <h2>Welcome to the AWS EKS Demo!</h2>
+            <p>This simple web application demonstrates the complete workflow of containerizing and deploying an application to Amazon EKS.</p>
+        </div>
+        
+        <div class="info">
+            <h2>Deployment Details</h2>
+            <p><strong>Region:</strong> ap-southeast-6 (Auckland)</p>
+            <p><strong>Cluster:</strong> feijoa-app-cluster</p>
+            <p><strong>Mode:</strong> EKS Auto Mode</p>
+        </div>
+        
+        <div class="footer">
+            <p>AWS Student Community Day - Auckland</p>
+            <p>🎓 Learn. Build. Deploy. 🚀</p>
+        </div>
+    </div>
+</body>
+</html>
